@@ -1,0 +1,48 @@
+D:\ProjectDocuments\ParseThe Parcel_App\bin\ParseThe Parcel_App.dll
+D:\ProjectDocuments\ParseThe Parcel_App\bin\ParseThe Parcel_App.pdb
+D:\ProjectDocuments\ParseThe Parcel_App\bin\Antlr3.Runtime.dll
+D:\ProjectDocuments\ParseThe Parcel_App\bin\DotNetOpenAuth.AspNet.dll
+D:\ProjectDocuments\ParseThe Parcel_App\bin\DotNetOpenAuth.Core.dll
+D:\ProjectDocuments\ParseThe Parcel_App\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\ProjectDocuments\ParseThe Parcel_App\bin\DotNetOpenAuth.OAuth.dll
+D:\ProjectDocuments\ParseThe Parcel_App\bin\DotNetOpenAuth.OpenId.dll
+D:\ProjectDocuments\ParseThe Parcel_App\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\ProjectDocuments\ParseThe Parcel_App\bin\EntityFramework.dll
+D:\ProjectDocuments\ParseThe Parcel_App\bin\Microsoft.Web.Infrastructure.dll
+D:\ProjectDocuments\ParseThe Parcel_App\bin\Microsoft.Web.WebPages.OAuth.dll
+D:\ProjectDocuments\ParseThe Parcel_App\bin\Newtonsoft.Json.dll
+D:\ProjectDocuments\ParseThe Parcel_App\bin\System.Net.Http.Formatting.dll
+D:\ProjectDocuments\ParseThe Parcel_App\bin\System.Web.Helpers.dll
+D:\ProjectDocuments\ParseThe Parcel_App\bin\System.Web.Http.dll
+D:\ProjectDocuments\ParseThe Parcel_App\bin\System.Web.Http.WebHost.dll
+D:\ProjectDocuments\ParseThe Parcel_App\bin\System.Web.Mvc.dll
+D:\ProjectDocuments\ParseThe Parcel_App\bin\System.Web.Optimization.dll
+D:\ProjectDocuments\ParseThe Parcel_App\bin\System.Web.Razor.dll
+D:\ProjectDocuments\ParseThe Parcel_App\bin\System.Web.WebPages.Deployment.dll
+D:\ProjectDocuments\ParseThe Parcel_App\bin\System.Web.WebPages.dll
+D:\ProjectDocuments\ParseThe Parcel_App\bin\System.Web.WebPages.Razor.dll
+D:\ProjectDocuments\ParseThe Parcel_App\bin\WebGrease.dll
+D:\ProjectDocuments\ParseThe Parcel_App\bin\WebMatrix.Data.dll
+D:\ProjectDocuments\ParseThe Parcel_App\bin\WebMatrix.WebData.dll
+D:\ProjectDocuments\ParseThe Parcel_App\bin\EntityFramework.xml
+D:\ProjectDocuments\ParseThe Parcel_App\bin\Newtonsoft.Json.xml
+D:\ProjectDocuments\ParseThe Parcel_App\bin\System.Net.Http.Formatting.xml
+D:\ProjectDocuments\ParseThe Parcel_App\bin\System.Web.Helpers.xml
+D:\ProjectDocuments\ParseThe Parcel_App\bin\System.Web.Http.xml
+D:\ProjectDocuments\ParseThe Parcel_App\bin\System.Web.Http.WebHost.xml
+D:\ProjectDocuments\ParseThe Parcel_App\bin\System.Web.Mvc.xml
+D:\ProjectDocuments\ParseThe Parcel_App\bin\System.Web.Razor.xml
+D:\ProjectDocuments\ParseThe Parcel_App\bin\System.Web.WebPages.xml
+D:\ProjectDocuments\ParseThe Parcel_App\bin\System.Web.WebPages.Deployment.xml
+D:\ProjectDocuments\ParseThe Parcel_App\bin\System.Web.WebPages.Razor.xml
+D:\ProjectDocuments\ParseThe Parcel_App\bin\WebMatrix.Data.xml
+D:\ProjectDocuments\ParseThe Parcel_App\bin\Microsoft.Web.WebPages.OAuth.xml
+D:\ProjectDocuments\ParseThe Parcel_App\bin\WebMatrix.WebData.xml
+D:\ProjectDocuments\ParseThe Parcel_App\bin\DotNetOpenAuth.AspNet.xml
+D:\ProjectDocuments\ParseThe Parcel_App\bin\DotNetOpenAuth.Core.xml
+D:\ProjectDocuments\ParseThe Parcel_App\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\ProjectDocuments\ParseThe Parcel_App\bin\DotNetOpenAuth.OAuth.xml
+D:\ProjectDocuments\ParseThe Parcel_App\bin\DotNetOpenAuth.OpenId.xml
+D:\ProjectDocuments\ParseThe Parcel_App\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\ProjectDocuments\ParseThe Parcel_App\obj\Debug\ParseThe Parcel_App.dll
+D:\ProjectDocuments\ParseThe Parcel_App\obj\Debug\ParseThe Parcel_App.pdb

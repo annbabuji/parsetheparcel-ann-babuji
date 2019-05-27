@@ -1,0 +1,203 @@
+﻿@model ParseThe_Parcel_App.Models.ParcelModel
+@{
+    ViewBag.Title = "Parse The Parcel";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h3>Enter Dimensions to Calculate Shipping Price</h3>
+<br />
+@using (Html.BeginForm(null, null, FormMethod.Post, new { id = "CalculateParcelCostForm", autocomplete = "off" }))
+{
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Our new service shipping costs are based on size and we offer different prices for small, medium, and large boxes. 
+</legend>
+        <p>
+Unfortunately we're currently unable to move heavy packages so we've placed an upper limit of 25kg per package.
+        </p>
+       
+        <div class="row"> 
+         <div class="editor-label col-sm-4">
+              @Html.LabelFor(model => Model.SelectedPackageType)
+   
+        </div>
+        <div class="editor-field col-sm-4">
+         
+        @Html.DropDownListFor(model => Model.SelectedPackageType, new SelectList(Model.PackageType,"Value","Text"))
+  
+        @Html.ValidationMessageFor(model => Model.SelectedPackageType)
+    
+        </div>
+  </div>
+       <br />
+        <div class="row"> 
+        <div class="editor-label col-lg-4">
+            @Html.LabelFor(model => Model.Length)
+        </div>
+        <div class="editor-field col-lg-4" onchange="_checkLength(this)">
+            @Html.EditorFor(model => Model.Length)
+        </div>
+            <div class="editor-label col-lg-6">
+             @Html.ValidationMessageFor(model => Model.Length,"", new { @class = "error" })
+        </div>
+</div>
+          <br />
+        <div class="row"> 
+             <div class="editor-label col-lg-4">
+            @Html.LabelFor(model => Model.Breadth)
+        </div>
+        <div class="editor-field col-lg-4" onchange="_checkBreadth(this)">
+            @Html.EditorFor(model => Model.Breadth)
+        </div>
+            <div class="editor-label col-lg-6">
+              @Html.ValidationMessageFor(model => Model.Breadth,"", new { @class = "error" })
+        </div>
+</div>
+          <br />
+         <div class="row"> 
+        <div class="editor-label col-lg-4">
+            @Html.LabelFor(model => Model.Height)
+        </div>
+        <div class="editor-field col-lg-4" onchange="_checkHeight(this)">
+            @Html.EditorFor(model => Model.Height)
+        </div>
+              <div class="editor-label col-lg-6">
+              @Html.ValidationMessageFor(model => Model.Height,"", new { @class = "error" })
+        </div>
+             </div>
+          <br />
+        @* <div class="row"> 
+         <div class="editor-label col-lg-4">
+            @Html.LabelFor(model => Model.CostCalculated)
+        </div>
+        <div class="editor-field col-lg-4">
+            @Html.EditorFor(model => Model.CostCalculated, new { @readonly = "readonly" })
+        </div>
+ <div class="editor-label col-lg-6">
+            @Html.ValidationMessageFor(model => Model.CostCalculated)
+        </div>
+             </div>*@
+      <br>
+        <p onclick="_CalculateCost()">
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+ <table class="table">
+            <tbody>
+                <tr>
+                  <th scope="col">Package Type</th>
+                  <th scope="col">Length</th>
+                  <th scope="col">Breadth</th>
+                  <th scope="col">Height</th>
+                 <th scope="col">Cost</th>
+                </tr>
+                <tr>
+                  <th scope="row">Small</th>
+                  <td>200mm</td>
+                  <td>300mm</td>
+                  <td>150mm</td>
+                  <td>$5.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Medium</th>
+                  <td>300mm</td>
+                  <td>400mm</td>
+                  <td>200mm</td>
+                  <td>$7.50</td>
+                </tr>
+                <tr>
+                  <th scope="row">Large</th>
+                  <td>400mm</td>
+                  <td>600mm</td>
+                  <td>250mm</td>
+                  <td>$8.50</td>
+                </tr>
+            </tbody>
+        </table>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+<script>
+
+    $(document).ready(function () 
+    {
+       
+        $("#SelectedPackageType").change(function () 
+        {
+            var SelectedPackageTypeValue = $('#SelectedPackageType').val();
+            $('#Length').val(' ');
+            $('#Breadth').val(' ');
+            $('#Height').val(' ');
+           
+           
+        });
+
+        _checkLength = function () {
+            if ( $('#Length').val() > 200  && $('#SelectedPackageType').val() == 'Small')
+            {
+                alert("The maximum length for a small item is 200mm");
+            }
+            else if ($('#Length').val() > 300 && $('#SelectedPackageType').val() == 'Medium')
+            {
+                alert("The maximum length for a small item is 300mm");
+            }
+            else if ($('#Length').val() > 400 && $('#SelectedPackageType').val() == 'Large') {
+                alert("The maximum length for a small item is 400mm");
+            }
+            else {
+                
+            }
+        }
+        _checkBreadth = function () {
+            if ($('#Breadth').val() > 300 && $('#SelectedPackageType').val() == 'Small') {
+                alert("The maximum breadth for a medium item is 300mm");
+            }
+            else if ($('#Breadth').val() > 400 && $('#SelectedPackageType').val() == 'Medium') {
+                alert("The maximum breadth for a medium item is 400mm");
+            }
+            else if ($('#Breadth').val() >600 && $('#SelectedPackageType').val() == 'Large') {
+                alert("The maximum breadth for a medium item is 600mm");
+            }
+            else { }
+        }
+        _checkHeight = function () {
+            if ($('#Height').val() > 150 && $('#SelectedPackageType').val() == 'Small') {
+                alert("The maximum height for a large item is 150mm");
+            }
+            else if ($('#Height').val() > 200 && $('#SelectedPackageType').val() == 'Medium') {
+                alert("The maximum height for a large item is 200mm");
+            }
+            else if ($('#Height').val() > 250 && $('#SelectedPackageType').val() == 'Large') {
+                alert("The maximum height for a large item is 250mm");
+            }
+            else { }
+        }
+        _CalculateCost = function () {
+            var model = {
+                SelectedPackageType: $('#SelectedPackageType').val(), Length: $('#Length').val(), Breadth: $('#Breadth').val(),Height: $('#Height').val(),
+            };
+            MakeAjaxCallWithType(FormMethod.Post, '@Url.Action("ParcelView", "Parcel")', JSON.stringify(model), function (response) 
+            {
+                
+                //if (response.Added == "Y")
+                //{
+                //    alert('Package Creation Success');
+                //}
+                //else {
+                //    alert('Package Creation failed. Please try again');
+                //}
+
+            })
+        }
+    });
+   
+ 
+</script>
+     @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+
+}

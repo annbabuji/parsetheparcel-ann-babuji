@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "ParcelCheckIn";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Parcel Check In</h2>
+<div class="col-lg-4">
+    @Html.TextBox("CostCalculated", (String)TempData["CostCalculated"], new { @class = "form-control", @readonly = "readonly" })  
+
+             
+
+</div>
